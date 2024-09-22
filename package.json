@@ -1,6 +1,6 @@
 {
     "name": "@amphore-dev/architect-plugin-react",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "React plugin for Architect",
     "repository": {
         "type": "git",
@@ -18,9 +18,6 @@
         "cli",
         "react"
     ],
-    "author": "Amphore Dev",
-    "license": "ISC",
-    "dependencies": {
-        "@amphore-dev/architect": "^1.0.0"
-    }
+    "author": "Amphore Dev <contact@amphore.dev>",
+    "license": "ISC"
 }

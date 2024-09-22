@@ -1,6 +1,6 @@
-# Architect Plugin: React
+# Architect plugin: React
 
-The **Architect Plugin: React** extends the functionality of the Architect CLI tool, enabling developers to easily generate React components, React Native components, and TypeScript versions for both. This plugin simplifies the creation of components for modern JavaScript and TypeScript frameworks, making it easy to scaffold projects and maintain consistency in your codebase.
+The **architect-plugin-react** extends the functionality of the [Architect CLI tool](https://www.npmjs.com/package/@amphore-dev/architect), enabling developers to easily generate React components, React Native components, and TypeScript versions for both. This plugin simplifies the creation of components for modern JavaScript and TypeScript frameworks, making it easy to scaffold projects and maintain consistency in your codebase.
 
 ## Features
 
@@ -25,13 +25,13 @@ The plugin supports the following languages for component generation:
 Install the plugin in your project directory with either npm or Yarn:
 
 ```bash
-npm install --save-dev architect-plugin-react
+npm install --save-dev @amphore-dev/architect-plugin-react
 ```
 
 or
 
 ```bash
-yarn add --dev architect-plugin-react
+yarn add --dev @amphore-dev/architect-plugin-react
 ```
 
 ## Usage
@@ -40,8 +40,12 @@ To configure the plugin, modify the `architect.config.json` file in your project
 
 ```json
 {
+    "plugins": ["@amphore-dev/architect-plugin-react"],
     "language": "react-typescript",
     "outputDir": "src"
-    // other configuration properties...
 }
 ```
+
+## License
+
+This plugin is licensed under the ISC License.
