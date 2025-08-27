@@ -1,7 +1,11 @@
 import React from "react";
 
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 export const __NAME__ = () => {
-	return <View>__NAME__</View>;
+    return (
+        <View>
+            <Text>__NAME__</Text>
+        </View>
+    );
 };
