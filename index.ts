@@ -1,4 +1,6 @@
-const ArchitectPlugin = {
+import type { TArchitectPlugin } from "@amphore-dev/architect";
+
+const ArchitectPlugin: TArchitectPlugin = {
     name: "architect-plugin-react",
     register(architect) {
         architect.registerBlueprints();
