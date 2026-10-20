@@ -4,10 +4,10 @@ The **architect-plugin-react** extends the functionality of the [Architect CLI t
 
 ## Features
 
--   Generate React components and React Native components.
--   Supports both JavaScript and TypeScript versions for React and React Native.
--   Easy integration with the Architect CLI tool for seamless project management.
--   Customizable output directory and component structure.
+- Generate React components and React Native components.
+- Supports both JavaScript and TypeScript versions for React and React Native.
+- Easy integration with the Architect CLI tool for seamless project management.
+- Customizable output directory and component structure.
 
 ## Supported Languages
 
@@ -19,6 +19,20 @@ The plugin supports the following languages for component generation:
 | `react-typescript`        | React component using TypeScript        |
 | `react-native`            | React Native component (JavaScript)     |
 | `react-native-typescript` | React Native component using TypeScript |
+
+## Blueprints
+
+The blueprints are matched with the folder names of the structure (e.g. with [@amphore-dev/architect-atomic-structure](https://www.npmjs.com/package/@amphore-dev/architect-atomic-structure)):
+
+| Folder       | React / React Native                    | TypeScript                                |
+| ------------ | --------------------------------------- | ----------------------------------------- |
+| `components` | Function component                      | Function component with a props interface |
+| `pages`      | Page component (named + default export) | Page component with a props interface     |
+| `hooks`      | Hook with a `useState`                  | Generic hook with a `useState<T>`         |
+| `types`      | JSDoc `@typedef`                        | `type` declaration                        |
+
+React Native variants use `react-native` components (`View`, `SafeAreaView`, `Text`).
+Other folders use Architect's default blueprint, with the extension of the language.
 
 ## Installation
 
@@ -40,9 +54,9 @@ To configure the plugin, modify the `architect.config.json` file in your project
 
 ```json
 {
-    "plugins": ["@amphore-dev/architect-plugin-react"],
-    "language": "react-typescript",
-    "outputDir": "src"
+  "plugins": ["@amphore-dev/architect-plugin-react"],
+  "language": "react-typescript",
+  "outputDir": "src"
 }
 ```
 
